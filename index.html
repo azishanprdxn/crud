@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CRUD</title>
+  <title>CRUD Task</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,20 +15,45 @@
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-
-    </header>
+    <header></header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="wrapper">
+        <form>
+          <fieldset>
+            <h1>Get A Free Course</h1>
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Customer Name" required>
+              <span class="helper">
+                Cannot be Empty!
+              </span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="course" placeholder="Course" required>
+              <span class="helper">
+                Cannot be Empty!
+              </span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="author" placeholder="Author" required>
+              <span class="helper">
+                Cannot be Empty!
+              </span>
+            </div>
+            <div class="form-control">
+              <button type="button" id="submit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+        <!-- Details -->
+        <div class="customer-list"></div>
+      </div>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>
-
-    </footer>
+    <footer></footer>
     <!--footer section end-->
   </div>
   <!--container end-->

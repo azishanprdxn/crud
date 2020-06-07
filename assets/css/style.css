@@ -115,7 +115,173 @@ li {
   main styling starts here
 =================================*/
 
+main {
+  margin: 24px;
+  text-align: center;
+}
 
+form {
+  width: 100%;
+  padding: 24px;
+  position: relative;
+  background-color: #f8f9fb;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 24px;
+}
+
+.form-group,
+.form-control {
+  position: relative;
+}
+
+.form-group input,
+.form-control button {
+  width: 60%;
+  padding: 8px 3.5%;
+  margin: 5px;
+}
+
+.form-group input {
+  border: 2px solid #a26e5e;
+  border-radius: 2px;
+  outline: none;
+}
+
+.form-group::before {
+  width: 18px;
+  padding: 8px;
+  position: absolute;
+  left: 16.4%;
+  top: 5px;
+  background: #a26e5e;
+  color: #fff;
+  font-size: 18px;
+  font-family: FontAwesome;
+}
+
+.form-group:nth-of-type(1)::before { content: "\f007"; }
+.form-group:nth-of-type(2)::before { content: "\f022"; }
+.form-group:nth-of-type(3)::before { content: "\f02d"; }
+.form-group input:focus { border: 2px solid #a26e5e; }
+
+.form-control button {
+  width: 67.4%;
+  border: 2px solid #d8d3d0;
+  margin-top: 6px;
+  margin-bottom: 24px;
+  background: #fff;
+  color: #d8d3d0;
+  outline: none;
+  text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+.form-control button:hover {
+  border: 2px solid #a26e5e;
+  background: #a26e5e;
+  color: #fff;
+}
+
+.customer-list {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer { width: 33.33%; }
+
+.del-icon {
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.del-icon:hover {
+  border-radius: 4px;
+  color: #a26e5e;
+  background-color: #fff;
+}
+
+figure {
+  margin: 10px;
+  border: 1px solid #d8d3d0;
+  position: relative;
+}
+
+figure:hover > .del-icon { display: block; }
+.customer-details { margin: 20px; }
+
+.customer-details li {
+  padding: 5px 0;
+  display: block;
+  text-align: left;
+}
+
+.customer-details li span:nth-of-type(2) { padding-left: 12px;}
+
+.customer-details .label {
+  padding: 6px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.helper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 3px;
+  position: absolute;
+  top: 6px;
+  left: 24px;
+  background: #dc3545;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateX(24px);
+}
+
+.message {
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 60%;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateX(24px);
+}
+
+.label {
+  width: 64px;
+  padding: 6px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.name { background: #ffc107; }
+.course { background: #28a745; }
+.author { background: #dc3545; }
+.added { background: #28a745; }
+.removed { background: #dc3545; }
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+  transition: .2s;
+}
 
 /*=================================
   main styling ends here
